@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quem Disse Isso?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tela Inicial -->
+  <div id="inicio">
+    <h1>Quem Disse Isso?</h1>
+    <button onclick="abrirModoJogo()">Jogar</button>
+    <button onclick="abrirEstatisticas()">Estatísticas</button>
+    <button onclick="abrirConfiguracoes()">Configurações</button>
+    <button onclick="abrirSobre()">Sobre</button>
+  </div>
+
+  <!-- Modo Diário -->
+  <div id="modoDiario" class="modo">
+    <h2>Modo Diário</h2>
+    <p id="fraseDiaria"></p>
+    <input type="text" id="inputAutor" placeholder="Digite o autor">
+    <div id="sugestoes"></div>
+    <div id="resultadoDiario"></div>
+  </div>
+
+  <!-- Modo Survival -->
+  <div id="modoSurvival" class="modo">
+    <h2>Modo Survival</h2>
+    <p id="fraseSurvival"></p>
+    <div id="alternativas"></div>
+    <div id="resultadoSurvival"></div>
+    <p id="pontuacaoSurvival">Pontuação: 0</p>
+  </div>
+
+  <!-- Modo Cantor/Pensador -->
+  <div id="modoCantorPensador" class="modo">
+    <h2>Modo Cantor ou Pensador</h2>
+    <p id="fraseCantorPensador"></p>
+    <div id="opcoes"></div>
+    <div id="resultadoCantorPensador"></div>
+  </div>
+
+  <!-- Estatísticas -->
+  <div id="estatisticas" class="modo">
+    <h2>Estatísticas</h2>
+    <p>Total de partidas: <span id="totalPartidas"></span></p>
+    <p>Acertos totais: <span id="acertosTotais"></span></p>
+    <p>Recorde Survival: <span id="recordeSurvival"></span></p>
+    <p>Dias consecutivos: <span id="diasConsecutivos"></span></p>
+    <p>Conquistas: <span id="conquistasList"></span></p>
+  </div>
+
+  <!-- Configurações -->
+  <div id="configuracoes" class="modo">
+    <h2>Configurações</h2>
+    <label><input type="checkbox" id="temaClaro"> Tema Claro</label>
+    <label><input type="checkbox" id="ativarSons"> Ativar Sons</label>
+    <button onclick="resetarEstatisticas()">Resetar Estatísticas</button>
+  </div>
+
+  <!-- Sobre -->
+  <div id="sobre" class="modo">
+    <h2>Sobre</h2>
+    <p>Jogo desenvolvido com HTML5, CSS3 e JavaScript Vanilla.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

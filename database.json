@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "texto": "Penso, logo existo.",
+    "autor": "René Descartes",
+    "categoria": "Filósofo",
+    "biografia": "Filósofo francês considerado pai da filosofia moderna.",
+    "curiosidade": "A frase surgiu em sua obra Discurso do Método."
+  },
+  {
+    "id": 2,
+    "texto": "A imaginação é mais importante que o conhecimento.",
+    "autor": "Albert Einstein",
+    "categoria": "Cientista",
+    "biografia": "Físico teórico alemão, ganhador do Prêmio Nobel de Física.",
+    "curiosidade": "Einstein era um violonista amador e escrevia poemas."
+  }
+]
